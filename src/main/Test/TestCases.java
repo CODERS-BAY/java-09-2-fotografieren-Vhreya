@@ -26,14 +26,15 @@ public class TestCases {
 
     @Test
     public void testIfCounterVariableForCameraWorks(){
-        assertEquals(3, Camera.getCOUNTER());
+        assertEquals(2, Camera.getCOUNTER());
         Camera Test2 = new Camera("bla", 123, 1234, true, lensTest);
-        assertEquals(4, Camera.getCOUNTER());
+        assertEquals(3, Camera.getCOUNTER());
     }
 
     @Test
     public void testIfCounterVariableForLensWorks() throws Exception {
-        assertEquals(4, Lens.getCOUNTERLENSES());
+        assertEquals(2, Lens.getCOUNTERLENSES());
         Lens test3 = new Lens(20, 25);
+        assertEquals(3, Lens.getCOUNTERLENSES());
     }
 }
